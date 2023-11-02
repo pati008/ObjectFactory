@@ -2,16 +2,23 @@ public class Ponies {
     //true/false
     // numbers -> int -> double
     // words= string
-    boolean isUnicorn= false;
-    boolean isPegasus= false;
+    boolean isUnicorn;
+    boolean isPegasus;
+    double size;
+    String name;
+    String color;
 
-    double size = 20.56;
-
-    String name= "bobby";
-    String color="pink";
+    public Ponies(String pName, String pColor, boolean pisUnicorn, boolean pisPegasus, double pSize){
+        System.out.println("made a new a pony!");
+        isUnicorn= pisUnicorn;
+        isPegasus= pisPegasus;
+        size = pSize;
+        name= pName;
+        color= pColor;
+    }
 
     public void describePony(){
-        System.out.println("this is pony,"+ name + "they are the color"+ color + ". They are the size" + size+". It is"
+        System.out.println("This is pony,"+ name + ". They are the color "+ color + ". They are the size " + size+". It is "
                 + isUnicorn +"that the pony is a Unicorn. It is "+isPegasus+" that the pony is a pegasus.");
 
 
