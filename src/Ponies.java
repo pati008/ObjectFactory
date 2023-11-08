@@ -15,7 +15,22 @@ public class Ponies {
         size = pSize;
         name= pName;
         color= pColor;
-    }
+
+        if(color.equals("pink")) {
+            System.out.println("I am PINK");
+        }else{
+               System.out.println("I am not Pink");
+            }
+        }
+        public Ponies(){
+        isUnicorn=true;
+        isPegasus=false;
+        size=22.3;
+        name= "Twilight Sparkle";
+        color= "Purple";
+        describePony();
+        }
+
 
     public void describePony(){
         System.out.println("This is pony,"+ name + ". They are the color "+ color + ". They are the size " + size+". It is "
